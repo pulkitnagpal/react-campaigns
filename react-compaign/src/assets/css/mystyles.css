@@ -1,0 +1,72 @@
+.header-wrapper {
+    height : 67px;
+    background-color: #1e263f
+}
+.content-wrapper {
+    margin-top: 47px
+}
+.content-heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2a416c;
+}
+
+/* styles for links */
+.nav-tabs .link {
+    padding: 0 12px 12px 12px;
+    cursor: pointer;
+}
+.nav-tabs .link:hover, .nav-tabs .link.active {
+    border-bottom: 4px solid #83a514;
+    color: #83a514;
+}
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+.nav-tabs .nav-item {
+    font-size: 1.1rem;
+}
+
+/* styles for table */
+.table {
+    box-shadow: 1px 1px 10px 2px #f3f3f3;
+}
+thead {
+   background-color:  #f1f1f4
+}
+.table thead th {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    letter-spacing: 0.05rem;
+    color: #556789
+}
+.table td {
+    vertical-align: middle;
+    padding: 1.75rem 0.75rem;
+}
+
+
+/* styles for table content */
+.table td p {
+    margin: 0;
+    color: #2a416c;
+}
+.date-wrapper p:nth-child(1){
+    font-size: 0.97rem
+}
+.date-wrapper p:nth-child(2){
+    color: #8594ac;
+    font-style: italic;
+}
+.item-image img {
+    height: 40px;
+    width: 40px
+}
+.logo, .item-image {
+    margin-right: 6px
+}
+.logo img {
+    height: 25px;
+}
