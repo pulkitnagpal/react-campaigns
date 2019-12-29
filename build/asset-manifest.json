@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57f0f91b.chunk.css",
+    "main.js": "/static/js/main.4322f872.chunk.js",
+    "main.js.map": "/static/js/main.4322f872.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c38fda6a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c38fda6a.js.map",
+    "static/css/2.c51b6406.chunk.css": "/static/css/2.c51b6406.chunk.css",
+    "static/js/2.78de055e.chunk.js": "/static/js/2.78de055e.chunk.js",
+    "static/js/2.78de055e.chunk.js.map": "/static/js/2.78de055e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bf53fc8ec03dedb60a7a1d3e697e52ba.js": "/precache-manifest.bf53fc8ec03dedb60a7a1d3e697e52ba.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.c51b6406.chunk.css.map": "/static/css/2.c51b6406.chunk.css.map",
+    "static/css/main.57f0f91b.chunk.css.map": "/static/css/main.57f0f91b.chunk.css.map",
+    "static/js/2.78de055e.chunk.js.LICENSE": "/static/js/2.78de055e.chunk.js.LICENSE",
+    "static/media/Bitmap.png": "/static/media/Bitmap.977ecf7b.png",
+    "static/media/bluestacks_logo.png": "/static/media/bluestacks_logo.aff6dfc6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c38fda6a.js",
+    "static/css/2.c51b6406.chunk.css",
+    "static/js/2.78de055e.chunk.js",
+    "static/css/main.57f0f91b.chunk.css",
+    "static/js/main.4322f872.chunk.js"
+  ]
+}
