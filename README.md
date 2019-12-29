@@ -24,3 +24,4 @@ You will also see any lint errors in the console.
 | Campaign Date Change | Select today's date in  Past Campaign tab for any campaign  | The campaign should be  removed from Past campaign  tab and appear in Live Campaign tab                      |
 | Campaign Date Change | Select past date in  Past Campaign tab for any campaign     | The campaign does not move from past tab and also get sorted in the order of most recent happened on the top |
 | Campaign Date Change | Select past date in  Upcoming Campaign tab for any campaign | The campaign does not move from  upcoming tab and also get  sorted in the order of nearest on the top        |
+| View Pricing         | Click on View pricing for a particular campaign             | A modal should open with the campaign's details                                                              |
