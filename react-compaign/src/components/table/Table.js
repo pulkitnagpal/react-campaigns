@@ -3,13 +3,13 @@ import Event from './Event';
 import PriceDetail from './PriceDetail';
 
 const Table = (props) => {
-    const [openPrice, setOpenPrice] = useState(false);
-
-    const handleViewPricing = () => {
-        setOpenPrice(true);
+    const [openPrice, setOpenPrice] = useState('');
+    
+    const handleViewPricing = (event) => {
+        setOpenPrice(event);
     }
     const handleClosePricing = () => {
-        setOpenPrice(false);
+        setOpenPrice('');
     }
     return (
         <Fragment>
@@ -32,7 +32,7 @@ const Table = (props) => {
                     }
                 </tbody>
             </table>
-            {openPrice ? (<PriceDetail onClose={handleClosePricing}/>) : null}
+            {openPrice !== '' ? (<PriceDetail onClose={handleClosePricing} event={openPrice}/>) : null}
         </Fragment>
     )
 }

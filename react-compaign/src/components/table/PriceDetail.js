@@ -1,16 +1,15 @@
 import React from 'react';
-import itemImage from '../../assets/Dashboard/Row/Thumb/Bitmap.png';
 
 const PriceDetail = (props) => {
-    const {onClose} = props
+    const {onClose, event} = props
     return (
         <div className='p-modal-wrapper'>
             <div className='p-content-wrapper'>
                 <div className="p-content">
                     <div className="p-content-header">
-                        <img src={itemImage}/>
+                        <img src={event.image_url}/>
                         <div>
-                            <p>pubg mobile</p>
+                            <p>{event.name}</p>
                             <p>US</p>
                         </div>
                     </div>

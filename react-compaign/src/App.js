@@ -3,6 +3,7 @@ import Table from './components/table/Table';
 import { loadDataFromLocal, updateTabs } from './helpers/methods';
 import './assets/css/bootstrap.min.css';
 import './assets/css/mystyles.css';
+import logo from './assets/bluestacks_logo.png'
 
 let TabsInitial = loadDataFromLocal();
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <div>
       <div className='container-fluid header-wrapper'>
-
+        <div><img src={logo} alt='' height='70px'/></div>
       </div>
       <div className='container content-wrapper'>
         <h1 className='content-heading'>Manage Compaigns</h1>

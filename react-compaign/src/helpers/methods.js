@@ -1,4 +1,4 @@
-import data from '../assets/data/data.json';
+import data from '../assets/data/data.js';
 import shortid from 'shortid';
 import {TAB_INITIALS} from './constants'
 

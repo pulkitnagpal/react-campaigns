@@ -1,6 +1,7 @@
 .header-wrapper {
     height : 67px;
-    background-color: #1e263f
+    background-color: #1e263f;
+    padding-left: 6%
 }
 .content-wrapper {
     margin-top: 47px
@@ -115,6 +116,9 @@ thead {
 }
 .react-calendar {
     border: none
+}
+.price-wrapper {
+    cursor: pointer;
 }
 
 @media (max-width: 768px){

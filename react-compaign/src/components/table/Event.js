@@ -5,7 +5,6 @@ import currencyLogo from '../../assets/Dashboard/Row/Group 4/Price.png';
 import csvLogo from '../../assets/Dashboard/Row/Group 3/file.png';
 import reportLogo from '../../assets/Dashboard/Row/Group 2/statistics-report.png';
 import calenderLogo from '../../assets/Dashboard/Row/Group/calendar.png';
-import itemImage from '../../assets/Dashboard/Row/Thumb/Bitmap.png'
 
 const Event = (props) => {
     const [openCalender, setOpenCalender] = useState(false);
@@ -45,7 +44,7 @@ const Event = (props) => {
                 <td>
                     <div className='d-flex title-wrapper'>
                         <div className='item-image'>
-                            <img src={itemImage} alt='' />
+                            <img src={event.image_url} alt='' />
                         </div>
                         <div className='item-details'>
                             <p>{event.name}</p>
@@ -54,7 +53,7 @@ const Event = (props) => {
                     </div>
                 </td>
                 <td>
-                    <div onClick={onViewPrice} className='price-wrapper'>
+                    <div onClick={()=>{onViewPrice(event)}} className='price-wrapper'>
                         <span className='logo'><img src={currencyLogo} /></span>
                         <span>View pricing</span>
                     </div>
