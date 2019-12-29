@@ -30,7 +30,7 @@ function App() {
             </li>
           </ul>
         </div>
-        <div className='mt-5' style={{overflow: 'scroll'}}>
+        <div className='mt-5' style={{overflow: 'scroll', boxShadow: '1px 1px 10px 2px #f3f3f3'}}>
           <Table/>
         </div>
       </div>

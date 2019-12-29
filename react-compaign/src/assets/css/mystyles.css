@@ -31,9 +31,6 @@
 }
 
 /* styles for table */
-.table {
-    box-shadow: 1px 1px 10px 2px #f3f3f3;
-}
 thead {
    background-color:  #f1f1f4
 }
@@ -72,6 +69,43 @@ thead {
 }
 .logo img {
     height: 25px;
+}
+.action-wrapper div{
+    cursor: pointer;
+}
+
+.calendar-wrapper {
+    position: relative;
+}
+.calendar-wrapper .calendar-content {
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    right: calc(100% + 12px);
+    top: 0;
+    visibility: hidden;
+    width: 300px;
+    height: auto;
+    background: #ffff;
+    transition: all 0.5s;
+    box-shadow: rgb(243, 243, 243) 1px 1px 10px 2px;
+}
+.calendar-wrapper .calendar-content .calendar-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+}
+.calendar-wrapper .calendar-content .calendar-date button {
+    background: #29416c;
+    color: #fff;
+    padding: 10px 18px;
+    border: 0;
+}
+.calendar-wrapper .calendar-content .calendar-date p {
+    font-size: 1rem
+}
+.react-calendar {
+    border: none
 }
 
 @media (max-width: 768px){

@@ -1,4 +1,6 @@
-import React, {Fragment} from 'react';
+import React, { Fragment, useState } from 'react';
+import Calendar from 'react-calendar';
+import {getFormattedDate} from '../../helpers/methods';
 import currencyLogo from '../../assets/Dashboard/Row/Group 4/Price.png';
 import csvLogo from '../../assets/Dashboard/Row/Group 3/file.png';
 import reportLogo from '../../assets/Dashboard/Row/Group 2/statistics-report.png';
@@ -6,7 +8,15 @@ import calenderLogo from '../../assets/Dashboard/Row/Group/calendar.png';
 import itemImage from '../../assets/Dashboard/Row/Thumb/Bitmap.png';
 
 const Event = (props) => {
-    const {onViewPrice} = props
+    const [openCalender, setOpenCalender] = useState(false);
+    const [chosenDate, setChosenDate] = useState(new Date());
+    const handleOpenCalender = () => {
+        setOpenCalender(!openCalender);
+    }
+    const handleChosenDate = (newDate) => {
+        setChosenDate(newDate);
+    }
+    const { onViewPrice } = props
     return (
         <Fragment>
             <tr>
@@ -41,14 +51,26 @@ const Event = (props) => {
                             <span className='logo'><img src={reportLogo} /></span>
                             <span>Report</span>
                         </div>
-                        <div>
+                        <div className='calendar-wrapper' onClick={handleOpenCalender}>
                             <span className='logo'><img src={calenderLogo} /></span>
                             <span>Schedule Again</span>
+                            <div className='calendar-content' style={openCalender ? { opacity: 1, visibility: 'visible' } : null} onClick={(e)=>{e.stopPropagation()}}>
+                                <div>
+                                    <div className='calendar-date'>
+                                        <p>Date : {getFormattedDate(chosenDate)}</p>
+                                        <button type="button">Save</button>
+                                    </div>
+                                    <Calendar
+                                        value={chosenDate}
+                                        onChange={handleChosenDate}
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </td>
             </tr>
-            
+
         </Fragment>
     )
 }
