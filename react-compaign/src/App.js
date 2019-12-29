@@ -18,19 +18,19 @@ function App() {
       <div className='container content-wrapper'>
         <h1 className='content-heading'>Manage Compaigns</h1>
         <div className='mt-5'>
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <div class={`link ${currentTab === Tabs.TAB_1 ? 'active' : ''}`} onClick={() => { setCurrentTab(Tabs.TAB_1) }}>Upcoming Campaigns</div>
+          <ul className="nav nav-tabs">
+            <li className="nav-item">
+              <div className={`link ${currentTab === Tabs.TAB_1 ? 'active' : ''}`} onClick={() => { setCurrentTab(Tabs.TAB_1) }}>Upcoming Campaigns</div>
             </li>
-            <li class="nav-item">
-              <div class={`link ${currentTab === Tabs.TAB_2 ? 'active' : ''}`} onClick={() => { setCurrentTab(Tabs.TAB_2) }}>Live Campaigns</div>
+            <li className="nav-item">
+              <div className={`link ${currentTab === Tabs.TAB_2 ? 'active' : ''}`} onClick={() => { setCurrentTab(Tabs.TAB_2) }}>Live Campaigns</div>
             </li>
-            <li class="nav-item">
-              <div class={`link ${currentTab === Tabs.TAB_3 ? 'active' : ''}`} onClick={() => { setCurrentTab(Tabs.TAB_3) }}>Past Campaigns</div>
+            <li className="nav-item">
+              <div className={`link ${currentTab === Tabs.TAB_3 ? 'active' : ''}`} onClick={() => { setCurrentTab(Tabs.TAB_3) }}>Past Campaigns</div>
             </li>
           </ul>
         </div>
-        <div className='mt-5'>
+        <div className='mt-5' style={{overflow: 'scroll'}}>
           <Table/>
         </div>
       </div>

@@ -12,6 +12,9 @@
 }
 
 /* styles for links */
+.nav {
+    flex-wrap: nowrap;
+}
 .nav-tabs .link {
     padding: 0 12px 12px 12px;
     cursor: pointer;
@@ -69,4 +72,91 @@ thead {
 }
 .logo img {
     height: 25px;
+}
+
+@media (max-width: 768px){
+    .action-wrapper div span:nth-child(2), .price-wrapper span:nth-child(2){
+        display: none
+    }
+    .price-wrapper {
+        text-align: center
+    }
+    .title-wrapper {
+        display: block !important;
+        text-align: center;
+    }
+}
+
+/* styles for details(price) */
+
+.p-modal-wrapper {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.6);
+}
+.p-content-wrapper {
+    background-color: #ffff;
+    margin: 1.75rem auto;
+    max-width: 400px;
+    min-height: 400px;
+    padding: 20px
+}
+.p-content-header {
+    display: flex;
+}
+.p-content-header img {
+    height: 150px;
+    width: 150px;
+    box-shadow: 1px 1px 10px 2px #f3f3f3;
+}
+.p-content-header div {
+    margin-left: 12px;
+    margin-top: auto;
+}
+.p-content-header p{
+    margin-bottom: 0;
+    font-size: 0.98rem;
+    text-transform: uppercase;
+}
+.p-content-header p:nth-child(1){
+    color: #2a416c;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+.p-content-header p:nth-child(2){
+    color: #9da4b8;
+}
+
+.p-content-details h2 {
+    font-weight: 600;
+    color: #2a416c;
+}
+.p-content-details .d-flex p{
+    margin-top: 1em;
+    font-size: 15px;
+}
+.p-content-details .d-flex p:nth-child(1){
+    color: #7a8ba5;
+}
+.p-content-details .d-flex p:nth-child(2){
+    font-weight: 700;
+    color: #29416c;
+}
+.p-content-footer {
+    width: 100%;
+}
+.p-content-footer div {
+    border: 2px solid #29416c;
+    padding: 10px;
+    width: 22%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #29416c;
 }
