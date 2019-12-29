@@ -2,7 +2,7 @@ import React, {useState, Fragment} from 'react';
 import Event from './Event';
 import PriceDetail from './PriceDetail';
 
-const Table = () => {
+const Table = (props) => {
     const [openPrice, setOpenPrice] = useState(false);
 
     const handleViewPricing = () => {
@@ -24,9 +24,9 @@ const Table = () => {
                 </thead>
                 <tbody>
                     {
-                        [1,2,3,4].map((item, index)=> {
+                        props.events.map((event)=> {
                             return (
-                                <Event key={index} onViewPrice={handleViewPricing}/>
+                                <Event key={event.hash} onViewPrice={handleViewPricing} event={event} onChangeDate={props.onChangeDate} currentTab={props.currentTab}/>
                             )
                         })
                     }

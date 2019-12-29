@@ -28,6 +28,7 @@
 }
 .nav-tabs .nav-item {
     font-size: 1.1rem;
+    text-transform: capitalize;
 }
 
 /* styles for table */
