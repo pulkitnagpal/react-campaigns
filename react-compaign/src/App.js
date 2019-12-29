@@ -8,7 +8,7 @@ let TabsInitial = loadDataFromLocal();
 
 function App() {
   const [Tabs, setTabs] = useState(TabsInitial);
-  const [currentTab, setCurrentTab] = useState(Tabs[0]);
+  const [currentTab = [], setCurrentTab] = useState(Tabs[0]);
   const handleChangeDate = (hash, newStamp) => {
     setTabs(updateTabs(hash, newStamp, currentTab, Tabs))
   }
@@ -32,8 +32,15 @@ function App() {
             }
           </ul>
         </div>
-        <div className='mt-5' style={{ overflow: 'scroll', boxShadow: '1px 1px 10px 2px #f3f3f3' }}>
-          <Table events={currentTab.data} onChangeDate={handleChangeDate} currentTab={currentTab} />
+        <div className={`mt-5 content-main ${currentTab.data.length === 0 ? 'justify-content-center align-items-center d-flex' : ''}`}>
+          {
+            currentTab.data.length !== 0 ? (
+              <Table events={currentTab.data} onChangeDate={handleChangeDate} currentTab={currentTab} />
+            ) : (
+                <h1>No {currentTab.name} campaigns for now</h1>
+              )
+          }
+
         </div>
       </div>
     </div>

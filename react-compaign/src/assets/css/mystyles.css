@@ -10,6 +10,14 @@
     font-weight: 800;
     color: #2a416c;
 }
+.content-wrapper .content-main {
+    overflow: scroll; 
+    box-shadow: 1px 1px 10px 2px #f3f3f3;
+    min-height: 400px;
+}
+.content-wrapper .content-main h1 {
+    color: #8080808c
+}
 
 /* styles for links */
 .nav {

@@ -2,7 +2,7 @@
     "data": [{
         "name": "Auto Chess",
         "region": "US",
-        "createdOn": 1559817714999,
+        "createdOn": 1578672118000,
         "price": "Price info of Test Whatsapp",
         "csv": "Some CSV link for Whatsapp",
         "report": "Some report link for Whatsapp",
@@ -11,7 +11,7 @@
       {
         "name": "Super Jewels Quest",
         "region": "CA, FR",
-        "createdOn": 1559906725124,
+        "createdOn": 1577808118000,
         "price": "Price info of Super Jewels Quest",
         "csv": "Some CSV link for Super Jewels Quest",
         "report": "Some report link for Super Jewels Ques",
@@ -29,7 +29,7 @@
       {
         "name": "Mancala Mix",
         "region": "JP",
-        "createdOn": 1559806680124,
+        "createdOn": 1575561718000,
         "price": "Price info of Mancala Mix",
         "csv": "Some CSV link for Mancala Mix",
         "report": "Some report link for Mancala Mix",
